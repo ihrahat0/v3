@@ -60,7 +60,7 @@ fs.readFile('./public/tokens-sitemap.xml', 'utf8', async (err, data) => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Origin: 'https://app.uniswap.org',
+          Origin: '*',
         },
         body: JSON.stringify({ query: getTopTokensQuery(chainName) }),
       })
@@ -118,7 +118,7 @@ fs.readFile('./public/nfts-sitemap.xml', 'utf8', async (err, data) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Origin: 'https://app.uniswap.org',
+        Origin: '*',
       },
       body: JSON.stringify({ query: nftTopCollectionsQuery }),
     })
@@ -175,7 +175,7 @@ fs.readFile('./public/pools-sitemap.xml', 'utf8', async (err, data) => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Origin: 'https://app.uniswap.org',
+          Origin: '*',
         },
         body: JSON.stringify({ query: getTopPoolsQuery(chainName) }),
       })

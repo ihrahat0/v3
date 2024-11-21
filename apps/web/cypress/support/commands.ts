@@ -138,7 +138,7 @@ Cypress.Commands.add('waitForAmplitudeEvent', (eventName, requiredProperties) =>
 
 Cypress.Commands.add('interceptGraphqlOperation', (operationName, fixturePath) => {
   return cy.intercept(/(?:interface|beta).gateway.uniswap.org\/v1\/graphql/, (req) => {
-    req.headers['origin'] = 'https://app.uniswap.org'
+    req.headers['origin'] = '*'
     if (req.body.operationName === operationName) {
       req.reply({ fixture: fixturePath })
     } else {
@@ -149,7 +149,7 @@ Cypress.Commands.add('interceptGraphqlOperation', (operationName, fixturePath) =
 
 Cypress.Commands.add('interceptQuoteRequest', (fixturePath) => {
   return cy.intercept(/(?:interface|beta).gateway.uniswap.org\/v2\/quote/, (req) => {
-    req.headers['origin'] = 'https://app.uniswap.org'
+    req.headers['origin'] = '*'
     req.reply({ fixture: fixturePath })
   })
 })

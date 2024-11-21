@@ -127,7 +127,7 @@ export function ScantasticModal(): JSX.Element | null {
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json',
-          Origin: 'https://uniswap.org',
+          Origin: '*',
         },
         body: JSON.stringify({
           uuid,
@@ -181,7 +181,7 @@ export function ScantasticModal(): JSX.Element | null {
         method: 'POST',
         headers: {
           Accept: 'application/json',
-          Origin: 'https://uniswap.org',
+          Origin: '*',
         },
       })
       if (!response.ok) {

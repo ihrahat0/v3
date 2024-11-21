@@ -14,7 +14,7 @@ describe('mini-portfolio activity history', () => {
         cy.intercept(
           {
             method: 'POST',
-            url: 'https://beta.gateway.uniswap.org/v1/graphql',
+            url: 'https://dogeswap.co/api/v1/graphql',
           },
           {
             body: {

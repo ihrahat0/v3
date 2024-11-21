@@ -34,7 +34,7 @@ const proxyConfig = {
     '^/v2': '/v2'
   },
   onProxyReq: (proxyReq, req) => {
-    proxyReq.setHeader('Origin', 'https://app.uniswap.org');
+    proxyReq.setHeader('Origin', '*');
     proxyReq.setHeader('Content-Type', 'application/json');
     proxyReq.setHeader('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.110 Safari/537.36');
   },
