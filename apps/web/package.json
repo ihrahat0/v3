@@ -4,6 +4,7 @@
   "description": "Uniswap Interface",
   "license": "GPL-3.0-or-later",
   "scripts": {
+    "proxy": "node proxy-server.js",
     "ajv": "node scripts/compile-ajv-validators.js",
     "check:deps:usage": "depcheck",
     "check:circular": "concurrently \"../../scripts/check-circular-imports.sh ./src/pages/App.tsx 6\" \"../../scripts/check-circular-imports.sh ./src/setupTests.ts 0\"",

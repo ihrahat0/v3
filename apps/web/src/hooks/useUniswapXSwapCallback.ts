@@ -51,8 +51,13 @@ if (UNISWAP_GATEWAY_DNS_URL === undefined) {
 //
 async function getUpdatedNonce(swapper: string, chainId: number): Promise<BigNumber | null> {
   try {
-    // endpoint fetches current nonce
-    const res = await fetch(`${UNISWAP_GATEWAY_DNS_URL}/nonce?address=${swapper.toLowerCase()}&chainId=${chainId}`)
+    const res = await fetch(`${UNISWAP_GATEWAY_DNS_URL}/nonce?address=${swapper.toLowerCase()}&chainId=${chainId}`, {
+      headers: {
+        'Content-Type': 'application/json',
+        Origin: 'https://app.uniswap.org',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.110 Safari/537.36',
+      },
+    })
     const { nonce } = await res.json()
     return BigNumber.from(nonce).add(1)
   } catch (e) {
@@ -206,6 +211,11 @@ export function useUniswapXSwapCallback({
 
           const res = await fetch(`${UNISWAP_GATEWAY_DNS_URL}/${endpoint}`, {
             method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Origin: 'https://app.uniswap.org',
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.110 Safari/537.36',
+            },
             body: JSON.stringify(body),
           })
           const responseBody = (await res.json()) as DutchAuctionOrderResponse
