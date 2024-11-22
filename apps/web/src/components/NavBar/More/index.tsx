@@ -42,9 +42,7 @@ export function More() {
 
   return (
     <Wrapper ref={ref}>
-      <IconContainer isActive={isOpen} onClick={() => setIsOpen(!isOpen)} data-testid="nav-more-button">
-        <ChevronIcon width={20} height={20} $rotated={isOpen} />
-      </IconContainer>
+      
       {isOpen && <Menu close={() => setIsOpen(false)} />}
     </Wrapper>
   )

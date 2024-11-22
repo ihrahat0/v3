@@ -12,12 +12,12 @@ import { Box } from 'nft/components/Box'
 import { Row } from 'nft/components/Flex'
 import { useProfilePageState } from 'nft/hooks'
 import { ProfilePageStateType } from 'nft/types'
-import { GetTheAppButton } from 'pages/Landing/components/DownloadApp/GetTheAppButton'
 import { ReactNode, useCallback } from 'react'
 import { NavLink, NavLinkProps, useLocation, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
 import { Z_INDEX } from 'theme/zIndex'
 import { Chain } from 'uniswap/src/data/graphql/uniswap-data-api/__generated__/types-and-hooks'
+import Logo from 'assets/images/uniwallet.png'
 
 import { useAccount } from 'hooks/useAccount'
 import { useIsNavSearchInputVisible } from '../../nft/hooks/useIsNavSearchInputVisible'
@@ -78,11 +78,6 @@ export const PageTabs = () => {
       >
         <Trans i18nKey="common.explore" />
       </MenuItem>
-      {!shouldDisableNFTRoutes && (
-        <MenuItem dataTestId="nft-nav" href="/nfts" isActive={isNftPage}>
-          <Trans i18nKey="common.nfts" />
-        </MenuItem>
-      )}
       <Box display={{ sm: 'flex', lg: 'none', xxl: 'flex' }} width="full">
         <MenuItem href="/pool" dataTestId="pool-nav-link" isActive={isPoolActive}>
           <Trans i18nKey="common.pool" />
@@ -122,12 +117,12 @@ const Navbar = ({ blur }: { blur: boolean }) => {
         <Box display="flex" height="full" flexWrap="nowrap">
           <Box className={styles.leftSideContainer}>
             <Box className={styles.logoContainer}>
-              <UniIcon
+              <img
+                src={Logo}
                 width="48"
                 height="48"
                 data-testid="uniswap-logo"
                 className={styles.logo}
-                clickable={!account}
                 onClick={handleUniIconClick}
               />
             </Box>
@@ -164,7 +159,6 @@ const Navbar = ({ blur }: { blur: boolean }) => {
                   <ChainSelector />
                 </Box>
               )}
-              {isLandingPage && <GetTheAppButton />}
               <Web3Status />
             </Row>
           </Box>

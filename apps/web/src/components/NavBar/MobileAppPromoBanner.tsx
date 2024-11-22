@@ -1,4 +1,4 @@
-import { ReactComponent as UniswapLogo } from 'assets/svg/uniswap_app_logo.svg'
+import { ReactComponent as Logo } from 'assets/svg/logo.svg'
 import Column from 'components/Column'
 import Row from 'components/Row'
 import { useEthersWeb3Provider } from 'hooks/useEthersProvider'
@@ -109,7 +109,7 @@ export function MobileAppPromoBanner() {
             setHideMobileAppPromoBanner(true)
           }}
         />
-        <UniswapLogo width="32px" height="32px" />
+        <Logo width="32px" height="32px" />
         <Column>
           <ThemedText.BodySmall>
             <Trans>Uniswap: Crypto & NFT Wallet</Trans>
