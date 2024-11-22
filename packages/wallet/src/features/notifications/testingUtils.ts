@@ -6,7 +6,7 @@ import { useAppDispatch } from 'wallet/src/state'
 export const exampleDisconnectedNotification = {
   type: 2,
   // address: '0x...',
-  dappName: 'Uniswap Interface',
+  dappName: 'Dogeswap Interface | Swap Seamlessly',
   event: 1,
   imageUrl: 'https://app.uniswap.org/favicon.png',
   hideDelay: 3000,

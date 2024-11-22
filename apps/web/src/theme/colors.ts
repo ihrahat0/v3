@@ -32,7 +32,7 @@ export const colors = {
   pink700: '#55072A',
   pink800: '#350318',
   pink900: '#2B000B',
-  pinkBase: '#FC74FE',
+  pinkBase: '#FF0420',
   pinkVibrant: '#F50DB4',
   red50: '#FAECEA',
   red100: '#FED5CF',
@@ -83,8 +83,8 @@ export const colors = {
   blue900: '#040E34',
   blueVibrant: '#587BFF',
   // TODO: add magenta 50-900
-  magenta300: '#FD82FF',
-  magentaVibrant: '#FC72FF',
+  magenta300: '#FF0420',
+  magentaVibrant: '#FF0420',
   purple300: '#8440F2',
   purple900: '#1C0337',
   purpleVibrant: '#6100FF',
@@ -108,7 +108,7 @@ export const colors = {
   surface3_dark: '#FFFFFF12',
   surface4_dark: '#FFFFFF20',
   surface5_dark: '#00000004',
-  accent1_dark: '#FC72FF',
+  accent1_dark: '#FF0420',
   accent2_dark: '#311C31',
   accent3_dark: '#4C82FB',
   neutral1_light: '#222222',
@@ -119,7 +119,7 @@ export const colors = {
   surface3_light: '#22222212',
   surface4_light: '#FFFFFF64',
   surface5_light: '#00000004',
-  accent1_light: '#FC72FF',
+  accent1_light: '#FF0420',
   accent2_light: '#FFEFFF',
   accent3_light: '#4C82FB',
   success: '#40B66B',
@@ -158,7 +158,7 @@ const commonTheme = {
   chain_81457: colors.networkBlast,
   promotional: colors.magenta300,
 
-  brandedGradient: 'linear-gradient(139.57deg, #FF79C9 4.35%, #FFB8E2 96.44%);',
+  brandedGradient: 'linear-gradient(139.57deg, #FF0420 4.35%, #FF0420 96.44%);',
   promotionalGradient: colors.accent1_light,
 }
 
