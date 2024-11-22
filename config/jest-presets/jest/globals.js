@@ -8,7 +8,7 @@ module.exports = {
     APPSFLYER_APP_ID: 123,
     DATADOG_CLIENT_TOKEN: 'key',
     DATADOG_PROJECT_ID: 123,
-    INFURA_KEY: 'key',
+    INFURA_KEY: 'b933365d933f41ba9c566a622a2d40e3',
     ONESIGNAL_APP_ID: 123,
     OPENAI_API_KEY: 'key',
     QUICKNODE_ARBITRUM_RPC_URL: 'https://api.uniswap.org',
