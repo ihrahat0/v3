@@ -53,32 +53,32 @@ export function useMobileAppPromoBannerEligible() {
   return (isWebIOS || isWebAndroid) && !hideMobileAppPromoBanner
 }
 
-const UNIVERSAL_DOWNLOAD_LINK = 'https://uniswapwallet.onelink.me/8q3y/39b0eeui'
+const UNIVERSAL_DOWNLOAD_LINK = 'https://x.com/DogeSwap_'
 
 function getDownloadLink(userAgent: string, peerWalletAgent?: string): string {
   if (userAgent.includes('MetaMaskMobile')) {
-    return 'https://uniswapwallet.onelink.me/8q3y/ee713xnh'
+    return 'https://x.com/DogeSwap_'
   }
   if (userAgent.includes('Phantom')) {
-    return 'https://uniswapwallet.onelink.me/8q3y/sjdi6xky'
+    return 'https://x.com/DogeSwap_'
   }
   if (userAgent.includes('OKApp')) {
-    return 'https://uniswapwallet.onelink.me/8q3y/7i8g60sb'
+    return 'https://x.com/DogeSwap_'
   }
   if (userAgent.includes('BitKeep')) {
-    return 'https://uniswapwallet.onelink.me/8q3y/93vro3iq'
+    return 'https://x.com/DogeSwap_'
   }
   if (userAgent.includes('DeFiWallet')) {
-    return 'https://uniswapwallet.onelink.me/8q3y/ay1z22ab'
+    return 'https://x.com/DogeSwap_'
   }
   if (userAgent.includes('1inchWallet')) {
-    return 'https://uniswapwallet.onelink.me/8q3y/03e2c5cw'
+    return 'https://x.com/DogeSwap_'
   }
   if (userAgent.includes('RHNCW')) {
-    return 'https://uniswapwallet.onelink.me/8q3y/ipq1dx4n'
+    return 'https://x.com/DogeSwap_'
   }
   if (peerWalletAgent?.includes('CoinbaseWallet CoinbaseBrowser')) {
-    return 'https://uniswapwallet.onelink.me/8q3y/24xpl5zh'
+    return 'https://x.com/DogeSwap_'
   }
   return UNIVERSAL_DOWNLOAD_LINK
 }
@@ -112,16 +112,16 @@ export function MobileAppPromoBanner() {
         <Logo width="32px" height="32px" />
         <Column>
           <ThemedText.BodySmall>
-            <Trans>Uniswap: Crypto & NFT Wallet</Trans>
+            <Trans>Follow the Community</Trans>
           </ThemedText.BodySmall>
           <ThemedText.Caption color="neutral2">
-            <Trans>Get the Uniswap Wallet app</Trans>
+            <Trans>& Keep Updated</Trans>
           </ThemedText.Caption>
         </Column>
       </Row>
       <StyledButton href={getDownloadLink(navigator.userAgent, peerWalletAgent)}>
         <ThemedText.LabelSmall color="white" lineHeight="20px">
-          <Trans>Get app</Trans>
+          <Trans>Follow Dogeswap</Trans>
         </ThemedText.LabelSmall>
       </StyledButton>
     </Wrapper>
