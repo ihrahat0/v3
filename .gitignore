@@ -26,9 +26,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# local env files
-.env
-.env.defaults.local
+
 
 # turbo
 .turbo
@@ -40,9 +38,7 @@ yarn-error.log*
 
 dist/out-tsc/*
 
-# Locale backup/generated files
-packages/uniswap/src/i18n/locales/source/*_old.json
-packages/uniswap/src/i18n/locales/@types/resources.d.ts
+
 
 # ci
 .ci-cache/

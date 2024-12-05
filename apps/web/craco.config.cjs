@@ -27,8 +27,6 @@ const compileNodeModules = [
   // in the library to code that doesn't use JSX syntax. This file extension is not automatically
   // recognized as extension for files containing JSX, so we have to manually add them to
   // the build proess (to the appropriate loader) and don't exclude them with other node_modules
-  'expo-clipboard',
-  'expo-linear-gradient',
 ]
 
 function getCacheDirectory(cacheName) {
@@ -146,10 +144,9 @@ module.exports = {
         alias: {
           ...webpackConfig.resolve.alias,
           '@web3-react/core': path.resolve(__dirname, 'src/connection/web3reactShim.ts'),
-          crypto: require.resolve('expo-crypto'),
           'react-native-gesture-handler$': require.resolve('react-native-gesture-handler'),
           'react-native-svg$': require.resolve('@tamagui/react-native-svg'),
-          'react-native$': 'react-native-web',
+          'react-native$': 'react-native-web'
         },
         plugins: webpackConfig.resolve.plugins.map((plugin) => {
           // Allow vanilla-extract in production builds.

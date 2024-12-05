@@ -1,7 +1,17 @@
 import type { THapticFeedback } from 'ui/src/utils/haptics/HapticFeedback'
 
-// eslint-disable-next-line no-restricted-imports
-export { ImpactFeedbackStyle, NotificationFeedbackType } from 'expo-haptics'
+// Define our own enums to replace expo-haptics
+export enum ImpactFeedbackStyle {
+  Light = 'light',
+  Medium = 'medium',
+  Heavy = 'heavy',
+}
+
+export enum NotificationFeedbackType {
+  Success = 'success',
+  Warning = 'warning',
+  Error = 'error',
+}
 
 // Every haptic feedback is a no-op on web.
 export const HapticFeedback: THapticFeedback = {

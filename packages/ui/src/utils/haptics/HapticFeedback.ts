@@ -1,9 +1,17 @@
-// eslint-disable-next-line no-restricted-imports
-import type { ImpactFeedbackStyle, NotificationFeedbackType } from 'expo-haptics'
 import { NotImplementedError } from 'utilities/src/errors'
 
-// eslint-disable-next-line no-restricted-imports
-export { ImpactFeedbackStyle, NotificationFeedbackType } from 'expo-haptics'
+// Define our own enums
+export enum ImpactFeedbackStyle {
+  Light = 'light',
+  Medium = 'medium',
+  Heavy = 'heavy',
+}
+
+export enum NotificationFeedbackType {
+  Success = 'success',
+  Warning = 'warning',
+  Error = 'error',
+}
 
 export type HapticFeedbackStyle = ImpactFeedbackStyle | NotificationFeedbackType
 

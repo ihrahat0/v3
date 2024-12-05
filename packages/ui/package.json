@@ -13,8 +13,6 @@
     "@tamagui/react-native-media-driver": "1.95.1",
     "@tamagui/theme-base": "1.95.1",
     "ethers": "5.7.2",
-    "expo-haptics": "12.8.1",
-    "expo-linear-gradient": "12.7.2",
     "i18next": "23.10.0",
     "react": "18.2.0",
     "react-native": "0.73.6",
