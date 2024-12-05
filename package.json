@@ -7,6 +7,8 @@
     "@crowdin/cli": "3.14.0",
     "@ethersproject/keccak256": "5.7.0",
     "@manypkg/cli": "^0.19.2",
+    "@react-native-community/hooks": "3.0.0",
+    "@react-native-community/masked-view": "0.1.11",
     "cors": "2.8.5",
     "danger": "11.2.6",
     "depcheck": "1.4.7",
@@ -15,6 +17,8 @@
     "husky": "^8.0.3",
     "i18next": "23.10.0",
     "i18next-parser": "8.6.0",
+    "react-native": "0.76.3",
+    "react-native-web": "0.19.13",
     "syncpack": "^8.5.14",
     "turbo": "1.10.16",
     "turbo-ignore": "^1.11.3"
@@ -52,7 +56,6 @@
     "multihashes": "4.0.2",
     "@ethersproject/hash": "5.7.0",
     "json5": "2.2.2",
-    "expo/uuid": "3.4.0",
     "is-core-module": "2.13.0",
     "qs": "6.11.0",
     "react": "18.2.0",
@@ -77,7 +80,6 @@
     "@web3-react/walletconnect-v2@8.5.1": "patch:@web3-react/walletconnect-v2@npm%3A8.5.1#./.yarn/patches/@web3-react-walletconnect-v2-npm-8.5.1-933cac0534.patch",
     "lightweight-charts@4.1.1": "patch:lightweight-charts@npm%3A4.1.1#./.yarn/patches/lightweight-charts-npm-4.1.1-01f161d9b6.patch",
     "react-native-context-menu-view@1.15.0": "patch:react-native-context-menu-view@npm%3A1.15.0#./.yarn/patches/react-native-context-menu-view-npm-1.15.0-c8a9d10d8c.patch",
-    "expo-local-authentication@13.8.0": "patch:expo-local-authentication@npm%3A13.8.0#./.yarn/patches/expo-local-authentication-npm-13.8.0-3a1b5c983f.patch",
     "react-native-wagmi-charts@2.3.0": "patch:react-native-wagmi-charts@npm%3A2.3.0#./.yarn/patches/react-native-wagmi-charts-npm-2.3.0-8e836a8f3c.patch",
     "@tamagui/animations-moti@1.92.0": "patch:@tamagui/animations-moti@npm%3A1.92.0#./.yarn/patches/@tamagui-animations-moti-npm-1.92.0-a8dde990ec.patch",
     "cypress-hardhat@2.5.0": "patch:cypress-hardhat@npm%3A2.5.0#./.yarn/patches/cypress-hardhat-npm-2.5.0-9b9b7d7a28.patch"
@@ -128,6 +130,18 @@
     "config/*"
   ],
   "devDependencies": {
-    "http-proxy-middleware": "3.0.3"
+    "@babel/plugin-proposal-class-properties": "7.18.6",
+    "@babel/preset-env": "7.26.0",
+    "@babel/preset-react": "7.26.3",
+    "@babel/preset-typescript": "7.26.0",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint-import-resolver-typescript": "3.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-rulesdir": "^0.2.2",
+    "http-proxy-middleware": "3.0.3",
+    "typescript": "latest"
   }
 }

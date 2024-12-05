@@ -34,19 +34,6 @@ jest.mock('redux-persist', () => {
   }
 })
 
-// Mock expo clipboard lib due to native deps
-jest.mock('expo-clipboard', () => ({
-  setString: jest.fn(),
-  setStringAsync: jest.fn(),
-  getStringAsync: () => Promise.resolve(),
-}))
-jest.mock('expo-blur', () => ({ BlurView: {} }))
-jest.mock('expo-barcode-scanner', () => ({}))
-jest.mock('expo-av', () => ({}))
-jest.mock('expo-haptics', () => ({ impactAsync: jest.fn(), notificationAsync: jest.fn(), ImpactFeedbackStyle: jest.fn() }))
-jest.mock('expo-linear-gradient', () => ({ LinearGradient: () => 'ExpoLinearGradient' }))
-jest.mock('expo-screen-capture', () => ({ addScreenshotListener: jest.fn() }))
-
 // Mock Amplitde log reporting
 jest.mock('@amplitude/analytics-react-native', () => ({
   flush: () => jest.fn(),
